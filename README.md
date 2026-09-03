@@ -1,5 +1,5 @@
 # Cod-frontend
-Exercicios e mini projetos das aulas de ccodificacao frontend no curso do SENAI
+Exercicios e mini projetos das aulas de codificacao frontend no curso do SENAI
 
 # 💻 Exercícios de Front-End
 
@@ -24,16 +24,3 @@ Repositório criado para armazenar e organizar todos os exercícios, desafios e 
 <!-- - **React / Vue / Tailwind CSS:** [Descrição se aplicável] -->
 
 ---
-
-## 📂 Estrutura das Pastas
-
-O repositório está organizado em módulos/aulas para facilitar a navegação:
-
-```text
-.
-├── 01-html-basico/       # Exercícios iniciais de marcação e tags semânticas
-├── 02-css-fundamentos/  # Estilização, seletor de especificidade e box model
-├── 03-flexbox-grid/     # Criação de layouts responsivos
-├── 04-js-introducao/    # Variáveis, condicionais, loops e funções
-├── 05-dom-eventos/      # Manipulação da DOM e escuta de eventos
-└── README.md
