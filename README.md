@@ -17,8 +17,8 @@ Repositório criado para armazenar e organizar todos os exercícios, desafios e 
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5:** Estruturação semântica de páginas web.
-- **CSS3:** Estilização, layout (Flexbox/Grid) e responsividade.
+- **HTML:** Estruturação semântica de páginas web.
+- **CSS:** Estilização, layout (Flexbox/Grid) e responsividade.
 - **JavaScript:** Lógica de programação, manipulação da DOM e assincronismo.
 <!-- Descomente as linhas abaixo caso utilizem frameworks durante o curso -->
 <!-- - **React / Vue / Tailwind CSS:** [Descrição se aplicável] -->
