@@ -17,3 +17,12 @@ h1{
     padding: 12px;
     text-align: center;
   }
+
+  h3{
+    text-align: center;
+  }
+
+  .par{
+    text-align: center;
+    padding: 11px;
+  }
