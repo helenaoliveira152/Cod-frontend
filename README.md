@@ -1,5 +1,5 @@
 # Cod-frontend
-Exercicios e mini projetos das aulas de codificacao frontend no curso do SENAI
+Exercicios e mini projetos das aulas de codificação frontend no curso do SENAI.
 
 # 💻 Exercícios de Front-End
 
