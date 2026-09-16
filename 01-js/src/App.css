@@ -182,3 +182,16 @@
     border-right-color: var(--border);
   }
 }
+
+button{
+  background-color: var(--periwikle-2);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #6b9666;
+  color: rgb(241, 234, 225);
+  font-size: 15px;
+  border-bottom: 40px;
+  
+}
+

@@ -55,6 +55,7 @@ body {
 }
 
 #root {
+  background-color:#d7ecd4 ;
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
@@ -74,7 +75,7 @@ h2 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 60px;
   letter-spacing: -1.68px;
   margin: 32px 0;
   @media (max-width: 1024px) {
@@ -108,4 +109,6 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+  letter-spacing: 20px;
 }
+
