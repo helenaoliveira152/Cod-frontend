@@ -2,6 +2,198 @@ import './App.css'
 
 function App() {
 
+  function gerarRelatorioKowalski() {
+  const relPF = Number(prompt("Digite a quantidade de relatórios para PF:"));
+  const relPJ = Number(prompt("Digite a quantidade de relatórios para PJ:"));
+  const tempoPF = Number(prompt("Digite o tempo gasto nos relatórios PF (em horas):"));
+  const tempoPJ = Number(prompt("Digite o tempo gasto nos relatórios PJ (em horas):"));
+  const valorPF = Number(prompt("Digite o valor total recebido de PF (R$):"));
+  const valorPJ = Number(prompt("Digite o valor total recebido de PJ (R$):"));
+
+  // Totais
+  const totalRelatorios = relPF + relPJ;
+  const tempoTotal = tempoPF + tempoPJ;
+  const valorTotal = valorPF + valorPJ;
+
+  // Médias
+  const mediaValorPF = relPF > 0 ? valorPF / relPF : 0;
+  const mediaValorPJ = relPJ > 0 ? valorPJ / relPJ : 0;
+  const mediaTempoPF = relPF > 0 ? tempoPF / relPF : 0;
+  const mediaTempoPJ = relPJ > 0 ? tempoPJ / relPJ : 0;
+
+  alert(
+    `========================================\n` +
+    `         📊 RELATÓRIO DO KOWALSKI        \n` +
+    `========================================\n\n` +
+    `📥 DADOS CRUS:\n` +
+    `• Relatórios PF: ${relPF} | Tempo: ${tempoPF}h | Recebido: R$ ${valorPF.toFixed(2)}\n` +
+    `• Relatórios PJ: ${relPJ} | Tempo: ${tempoPJ}h | Recebido: R$ ${valorPJ.toFixed(2)}\n\n` +
+    `----------------------------------------\n` +
+    `📌 CONSOLIDADO GERAL:\n` +
+    `----------------------------------------\n` +
+    `• Total de Relatórios: ${totalRelatorios}\n` +
+    `• Tempo Total Trabalhado: ${tempoTotal}h\n` +
+    `• Valor Total Recebido: R$ ${valorTotal.toFixed(2)}\n\n` +
+    `----------------------------------------\n` +
+    `📈 MÉDIAS POR RELATÓRIO:\n` +
+    `----------------------------------------\n` +
+    `• Pessoa Física (PF):\n` +
+    `   - Média de Valor: R$ ${mediaValorPF.toFixed(2)}\n` +
+    `   - Média de Tempo: ${mediaTempoPF.toFixed(2)}h/relatório\n\n` +
+    `• Pessoa Jurídica (PJ):\n` +
+    `   - Média de Valor: R$ ${mediaValorPJ.toFixed(2)}\n` +
+    `   - Média de Tempo: ${mediaTempoPJ.toFixed(2)}h/relatório\n` +
+    `========================================`
+  );
+}
+
+  function calcularFreelaJunin() {
+  const horasEstimadas = Number(prompt("Digite a quantidade estimada de horas de desenvolvimento:"));
+
+  const custoConsultor = 500;
+  const valorHoraJunin = 350;
+
+  const valorDesenvolvimento = horasEstimadas * valorHoraJunin;
+  const precoTotalCliente = custoConsultor + valorDesenvolvimento;
+  const lucroJunin = precoTotalCliente - custoConsultor;
+
+  alert(
+    `--- ORÇAMENTO FREELANCE - JUNIN ---\n\n` +
+    `Horas estimadas: ${horasEstimadas}h\n` +
+    `Custo da consultoria (Denis Nery): R$ ${custoConsultor.toFixed(2)}\n` +
+    `Preço total para o cliente: R$ ${precoTotalCliente.toFixed(2)}\n\n` +
+    `Lucro do Junin: R$ ${lucroJunin.toFixed(2)}`
+  );
+}
+
+  function calcularCustoPrompt() {
+  const caracteres = Number(prompt("Digite a quantidade de caracteres do prompt:"));
+  const valorPorToken = Number(prompt("Digite o valor de 1 token (em R$):"));
+
+  const taxaFixaTokens = 5;
+  const tokensPorCaracter = 1;
+
+  const totalTokens = taxaFixaTokens + (caracteres * tokensPorCaracter);
+  const custoTotalReais = totalTokens * valorPorToken;
+
+  alert(
+    `--- STARTUP I.A. - CUSTO DE PROMPT ---\n\n` +
+    `Caracteres digitados: ${caracteres}\n` +
+    `Total de tokens gastos: ${totalTokens}\n` +
+    `Custo total: R$ ${custoTotalReais.toFixed(2)}`
+  );
+}
+
+    function calcularLucroJares() {
+   const caminhoes = Number(prompt("Digite a quantidade de caminhões carregados:"));
+
+    const jaresPorCaminhao = 50;
+    const precoVendaJare = 90;
+    const fretePorCaminhao = 450;
+
+    const totalJares = caminhoes * jaresPorCaminhao;
+    const faturamentoTotal = totalJares * precoVendaJare;
+    const custoFreteTotal = caminhoes * fretePorCaminhao;
+    const lucroTotal = faturamentoTotal - custoFreteTotal;
+
+    alert(
+      `--- FAZENDA DO GAEL - VENDAS DE JARÉS ---\n\n` +
+      `Caminhões carregados: ${caminhoes}\n` +
+      `Total de jarés: ${totalJares}\n` +
+      `Faturamento: R$ ${faturamentoTotal.toFixed(2)}\n` +
+      `Custo do frete: R$ ${custoFreteTotal.toFixed(2)}\n` +
+      `Lucro final: R$ ${lucroTotal.toFixed(2)}`
+    );
+}
+
+  function calcularChurrasco (){
+    let pessoas = Number(prompt("Digite a quantidade de pessoas para o churrasco:"));
+
+    let carneKg = pessoas * 0.5;
+    let cervejaL = pessoas * 1.0;
+    let aguaL = pessoas * 0.5;
+    let refriL = pessoas * 0.2;
+
+    alert(
+      `--- CALCULADORA DE CHURRASCO DO GAÚCHO ---\n\n` +
+      `Quantidade de pessoas: ${pessoas}\n\n` +
+      `Consumo estimado:\n` +
+      `- Carne: ${carneKg.toFixed(2)} kg\n` +
+      `- Cerveja: ${cervejaL.toFixed(2)} L\n` +
+      `- Água: ${aguaL.toFixed(2)} L\n` +
+      `- Refrigerante: ${refriL.toFixed(2)} L`
+);
+  }
+
+  function pesoGramas (){
+      let pesoGramas = Number(prompt("Digite o peso da ração a granel (em gramas):"));
+
+  let precoPorQuilo = 10;
+  let pesoQuilos = pesoGramas / 1000;
+  let precoTotal = pesoQuilos * precoPorQuilo;
+
+  alert(
+  `--- PET SHOP RON BERNARDO ---\n\n` +
+  `Peso: ${pesoGramas}g (${pesoQuilos.toFixed(2)} kg)\n` +
+  `Preço do quilo: R$ 10,00\n` +
+  `Total a pagar: R$ ${precoTotal.toFixed(2)}`
+);
+  }
+
+  function valorPago(){
+  let valorPago = Number(prompt("Digite o valor pago na obra de arte (R$):"));
+
+  let valorVenda = valorPago * 3;
+  let lucroReais = valorVenda - valorPago;
+
+alert(
+  `--- POLÍTICA DE PREÇOS (ROMERO BRIQUE) ---\n\n` +
+  `Valor Pago: R$ ${valorPago.toFixed(2)}\n` +
+  `Lucro (200%): R$ ${lucroReais.toFixed(2)}\n` +
+  `Preço de Venda: R$ ${valorVenda.toFixed(2)}`
+);
+  }
+
+  function calcularSalario (){
+    let salarioTotal = Number(prompt("Digite o seu salário total: "))
+    let moradia = Number(prompt("Digite o gasto da moradia: "))
+    let luz = Number(prompt("Digite o gasto da luz: "))
+    let agua = Number(prompt("Digite o gasto da agua: "))
+    let internet = Number(prompt("Digite o gasto da internet: "))
+    let gasolina = Number(prompt("Digite o gasto da gasolina: "))
+    let streamings = Number(prompt("Digite o gasto de streamings: "))
+    let telefone = Number(prompt("Digite o gasto do telefone: "))
+    let outros = Number(prompt("Digite o gasto de outros: "))
+
+    let restoSalario = salarioTotal - moradia - luz - agua - internet - gasolina - streamings - telefone - outros
+
+    alert("O resto final do seu salário foi de: R$" + restoSalario)
+    
+  }
+
+   function calcularBomba(){
+    let preco = Number(prompt("Digite o preço unitário: "))
+    let quantidade = Number(prompt("Digite a quantidade usada por show: "))
+    let show = Number(prompt("Digite a quantidade de shows: "))
+
+    let multiplicar = preco * quantidade;
+    let pagar = multiplicar * show;
+
+    alert("Voçê tem " + show + " shows marcados e precisa de " + quantidade + " Bombas para cada show, cada bomba custa R$ " + preco + " e voçê pagará ao todo R$ " + pagar )
+   }
+
+     function calcularLucro(){
+    let gasto = Number(prompt("Quanto foi gasto em suprimentos e mercadorias: "))
+    let vendaDeIngressos = Number(prompt("Qual o Valor da Venda dos Ingressos: "))
+    let vendaDeItens =  Number(prompt("Qual o Valor da Venda dos Itens: "))
+
+    let soma = vendaDeIngressos + vendaDeItens
+    let lucroBruto = soma - gasto
+    let porcentual =  (lucroBruto / gasto) * 100;
+
+    alert("Valor em Reais: R$" + lucroBruto + "\nValor Porcentual:" + porcentual)
+   }
+
   function calcularFat(){
     let faturouHoje = Number(prompt("Quanto faturou hoje?: "))
     
@@ -146,6 +338,28 @@ function App() {
       <button onClick={calcularFrete}>Preço Frete</button>
 
       <button onClick={calcularFat}>Faturamento Dona Bete</button>
+
+      <button onClick={calcularLucro}>Calcular Lucro</button>
+
+      <button onClick={calcularBomba}>Calcular Bomba</button>
+
+      <button onClick={calcularSalario}>Calcular Salário</button>
+
+      <button onClick={valorPago}>Calcular valor Pago</button>
+
+      <button onClick={pesoGramas}>Calcular peso gramas</button>
+
+      <button onClick={calcularChurrasco}>Calcular churrasco</button>
+
+      <button onClick={calcularLucroJares}> Lucro Jares</button>
+
+      <button onClick={calcularCustoPrompt}>Custo Prompt </button>
+
+      <button onClick={calcularFreelaJunin}> Freela Junin</button>
+
+      <button onClick={gerarRelatorioKowalski}>Relatório Kowalski </button>
+
+
 
     </div>
   )
