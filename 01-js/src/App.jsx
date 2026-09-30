@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import './App.css'
 
 function App() {
+  const [resultado, setResultado] = useState(0)
 
   function gerarRelatorioKowalski() {
   const relPF = Number(prompt("Digite a quantidade de relatórios para PF:"));
@@ -45,7 +47,7 @@ function App() {
     `   - Média de Tempo: ${mediaTempoPJ.toFixed(2)}h/relatório\n` +
     `========================================`
   );
-}
+  }
 
   function calcularFreelaJunin() {
   const horasEstimadas = Number(prompt("Digite a quantidade estimada de horas de desenvolvimento:"));
@@ -64,7 +66,7 @@ function App() {
     `Preço total para o cliente: R$ ${precoTotalCliente.toFixed(2)}\n\n` +
     `Lucro do Junin: R$ ${lucroJunin.toFixed(2)}`
   );
-}
+  }
 
   function calcularCustoPrompt() {
   const caracteres = Number(prompt("Digite a quantidade de caracteres do prompt:"));
@@ -82,7 +84,7 @@ function App() {
     `Total de tokens gastos: ${totalTokens}\n` +
     `Custo total: R$ ${custoTotalReais.toFixed(2)}`
   );
-}
+  } 
 
     function calcularLucroJares() {
    const caminhoes = Number(prompt("Digite a quantidade de caminhões carregados:"));
@@ -104,7 +106,7 @@ function App() {
       `Custo do frete: R$ ${custoFreteTotal.toFixed(2)}\n` +
       `Lucro final: R$ ${lucroTotal.toFixed(2)}`
     );
-}
+  }
 
   function calcularChurrasco (){
     let pessoas = Number(prompt("Digite a quantidade de pessoas para o churrasco:"));
@@ -171,7 +173,7 @@ alert(
     
   }
 
-   function calcularBomba(){
+  function calcularBomba(){
     let preco = Number(prompt("Digite o preço unitário: "))
     let quantidade = Number(prompt("Digite a quantidade usada por show: "))
     let show = Number(prompt("Digite a quantidade de shows: "))
@@ -180,9 +182,9 @@ alert(
     let pagar = multiplicar * show;
 
     alert("Voçê tem " + show + " shows marcados e precisa de " + quantidade + " Bombas para cada show, cada bomba custa R$ " + preco + " e voçê pagará ao todo R$ " + pagar )
-   }
+  }
 
-     function calcularLucro(){
+  function calcularLucro(){
     let gasto = Number(prompt("Quanto foi gasto em suprimentos e mercadorias: "))
     let vendaDeIngressos = Number(prompt("Qual o Valor da Venda dos Ingressos: "))
     let vendaDeItens =  Number(prompt("Qual o Valor da Venda dos Itens: "))
@@ -192,7 +194,7 @@ alert(
     let porcentual =  (lucroBruto / gasto) * 100;
 
     alert("Valor em Reais: R$" + lucroBruto + "\nValor Porcentual:" + porcentual)
-   }
+  }
 
   function calcularFat(){
     let faturouHoje = Number(prompt("Quanto faturou hoje?: "))
@@ -300,6 +302,7 @@ alert(
     let bocaDoSapo = nome
     alert(nome + ", seu nome tá na boca do sapo🐸")
   }
+
   function calcularMedia() {
     let not1 = Number(prompt("Qual a sua primeira nota?: "))
     let not2 = Number(prompt("Qual a sua segunda nota:? "))
@@ -308,9 +311,27 @@ alert(
     alert("Sua nota é: " + media)
   }
 
+{/*💕Botão novo 30/09 💕*/}
+
+  function calcularDobro(){
+      let numero = Number(prompt("Digite o número A-GO-RA: "));
+      let dobro = numero * 2
+      setResultado(dobro)
+
+  }
   return (
     <div className="cont-app">
       <h1>JavaScript no React</h1>
+
+      <hr />
+      <h2>Usando Estados</h2>
+        <button onClick={calcularDobro}>Estados - Dobro</button>
+
+        <p>
+          Resultado da Operação: {resultado}
+        </p>
+
+      <hr />
 
       <h2>Exercicios supimpas</h2>
       <hr />
