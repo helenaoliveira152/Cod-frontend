@@ -20,7 +20,7 @@ function Maca () {
   return (
     <div>
         <h2>Preço Maçã</h2>
-        <button onClick={calcularMaca}>Calcular preço Maçãs</button>
+        <button className='btn1' onClick={calcularMaca}>Calcular preço Maçãs</button>
         {preMaca}
     </div>
   )

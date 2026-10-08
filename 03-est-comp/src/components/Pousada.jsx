@@ -29,7 +29,7 @@ function Pousada() {
   return (
     <div className='pousada'>
         <h2>Pousada, oba!!</h2>
-        <button onClick={diarias}>Diarias Hotel</button>
+        <button className='btn5' onClick={diarias}>Diarias Hotel</button>
         {conta}
     </div>
   )

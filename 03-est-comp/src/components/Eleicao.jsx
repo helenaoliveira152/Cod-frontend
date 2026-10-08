@@ -20,7 +20,7 @@ function Eleicao() {
   return (
     <div className="Eleicao">
         <h2>Eleição</h2>
-        <button onClick={votacao}>Idade Eleicao</button>
+        <button className="btn2" onClick={votacao}>Idade Eleicao</button>
             {idade}
     </div>
 

@@ -19,7 +19,7 @@ function Peso() {
   return (
     <div>
         <h2>Peso ideal</h2>
-        <button onClick={calPeso}>Calcular Peso</button>
+        <button className="btn4" onClick={calPeso}>Calcular Peso</button>
         {pesoIde}
     </div>
   )
