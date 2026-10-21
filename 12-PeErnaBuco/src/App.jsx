@@ -11,6 +11,39 @@ function App() {
 
   return (
     <div className='app'>
+      {/* Flores caindo nas laterais */}
+      <div className="petals-container left">
+        <span className="petal">🌸</span>
+        <span className="petal">🌺</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌼</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+      </div>
+
+      <div className="petals-container right">
+        <span className="petal">🌸</span>
+        <span className="petal">🌼</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌺</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+        <span className="petal">🌸</span>
+      </div>
+
       <nav>
         <button onClick={() => setSite(0)}>Oração do aprendiz</button>
         <button onClick={() => setSite(1)}>Oração do desenvolvedor Web</button>
@@ -18,7 +51,7 @@ function App() {
         <button onClick={() => setSite(3)}>Oração do Backend</button>
         <button onClick={() => setSite(4)}>Oração do estudante</button>
       </nav>
-      <h1>Orações DEVs</h1>
+      <h1>Orações DEVs Cansados</h1>
 
       {site==0 && <Aprendiz/>}
       {site==1 && <Desenvolvedor/>}
@@ -26,8 +59,6 @@ function App() {
       {site==3 && <Backend/>}
       {site==4 && <Estudante/>}
     </div>
-
-
   )
 }
 
