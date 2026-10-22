@@ -184,3 +184,85 @@ small {
     max-width: 100%;
   }
 }
+
+/* ===== Flores decorativas nas laterais ===== */
+body::before,
+body::after {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 70px;
+  text-align: center;
+
+  font-size: 30px;
+  line-height: 2.2;
+
+  white-space: pre-wrap;
+  pointer-events: none;
+  z-index: 0;
+
+  filter: drop-shadow(0 0 8px #ff80ab50);
+}
+
+/* Lateral esquerda */
+body::before {
+  content: "🌸\A🌷\A🌺\A🌷\A🌸";
+  left: 8px;
+  animation: floresEsquerda 4s ease-in-out infinite;
+}
+
+/* Lateral direita */
+body::after {
+  content: "🌷\A🌸\A🌷\A🌺\A🌸";
+  right: 8px;
+  animation: floresDireita 4s ease-in-out infinite;
+}
+
+/* Movimento delicado */
+@keyframes floresEsquerda {
+  0%, 100% {
+    transform: translateY(-50%) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-52%) rotate(3deg);
+  }
+}
+
+@keyframes floresDireita {
+  0%, 100% {
+    transform: translateY(-50%) rotate(3deg);
+  }
+  50% {
+    transform: translateY(-48%) rotate(-3deg);
+  }
+}
+
+/* Garante que o conteúdo fique acima das decorações */
+.app {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  body::before,
+  body::after {
+    width: 30px;
+    font-size: 19px;
+    line-height: 2;
+    opacity: 0.7;
+  }
+
+  body::before {
+    left: 0;
+  }
+
+  body::after {
+    right: 0;
+  }
+
+  .app {
+    width: 88%;
+  }
+}
