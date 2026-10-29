@@ -10,13 +10,13 @@ function Ex008() {
         let M = Number(inputM)
         let diferenca = N - M
 
-        setResultado(diferenca)
+        setResultado("O número é " , diferenca)
     }
 
 
   return (
     <div className='ex008'>
-        <h1>008 - Pneu</h1>
+        <h1>0081 - Pneu</h1>
             <label htmlFor="">pressão 1</label>
 
             <input type="text" 

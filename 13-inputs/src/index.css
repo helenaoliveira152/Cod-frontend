@@ -1,5 +1,4 @@
 
-/* ===== Configurações gerais ===== */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   min-height: 100vh;
 }
 
-/* ===== Container principal ===== */
 .app {
   display: flex;
   flex-direction: column;
@@ -34,7 +32,8 @@ body {
 /* ===== Cards dos componentes ===== */
 .home,
 .demo,
-.ex008 {
+.ex008,
+.hoho {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +58,8 @@ body {
 /* ===== Efeito ao passar o mouse ===== */
 .home:hover,
 .demo:hover,
-.ex008:hover {
+.ex008:hover,
+.hoho:hover {
   transform: translateY(-3px);
   border-color: #ff80ab;
   box-shadow: 0 12px 28px #ff4f8730;
@@ -167,7 +167,8 @@ small {
 
   .home,
   .demo,
-  .ex008 {
+  .ex008,
+  .hoho {
     padding: 22px 16px;
     border-radius: 14px;
   }

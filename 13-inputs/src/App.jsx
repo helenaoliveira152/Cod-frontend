@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import Demo from './pages/Demo'
 import Ex008 from './pages/Ex008'
+import HoHo from './pages/HoHo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <Demo/>
       <Ex008/>
+      <HoHo/>
    </div>
   )
 }
