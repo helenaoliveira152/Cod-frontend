@@ -33,7 +33,8 @@ body {
 .home,
 .demo,
 .ex008,
-.hoho {
+.hoho,
+.media {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +60,8 @@ body {
 .home:hover,
 .demo:hover,
 .ex008:hover,
-.hoho:hover {
+.hoho:hover,
+.media:hover {
   transform: translateY(-3px);
   border-color: #ff80ab;
   box-shadow: 0 12px 28px #ff4f8730;
@@ -168,7 +170,8 @@ small {
   .home,
   .demo,
   .ex008,
-  .hoho {
+  .hoho,
+  .media {
     padding: 22px 16px;
     border-radius: 14px;
   }

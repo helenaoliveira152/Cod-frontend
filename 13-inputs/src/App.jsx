@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Demo from './pages/Demo'
 import Ex008 from './pages/Ex008'
 import HoHo from './pages/HoHo'
+import Media from './pages/Media'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Demo/>
       <Ex008/>
       <HoHo/>
+      <Media/>
    </div>
   )
 }
